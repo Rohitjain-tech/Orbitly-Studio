@@ -34,47 +34,49 @@
 
 ## 📁 Folder Structure
 
-Orbitly Studio/
-│
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   │
-│   ├── globals.css
-│   │
-│   ├── projects/
-│   │   ├── page.tsx
-│   │   └── [slug]/
-│   │       └── page.tsx
-│   │
-│   ├── blog/
-│   │   ├── page.tsx
-│   │   └── [slug]/
-│   │       └── page.tsx
-│   │
-│   ├── components/
-│   │   ├── Navbar.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Services.tsx
-│   │   ├── Projects.tsx
-│   │   ├── ProjectCard.tsx
-│   │   ├── Blog.tsx
-│   │   ├── BlogCard.tsx
-│   │   ├── Testimonials.tsx
-│   │   ├── SectionHeading.tsx
-│   │   └── Footer.tsx
-│   │
-│   ├── data/
-│   │   ├── projects.ts
-│   │   └── blog.ts
-│   │
-│   └── types/
-│       └── index.ts
-│
-├── next.config.ts
-├── package.json
-├── tsconfig.json
-└── README.md
+### `src/`
+
+- **`app/`**
+  - `layout.tsx` — Root layout, metadata, fonts, navbar and footer
+  - `page.tsx` — Homepage with Hero, Services, Projects, Blog and Testimonials
+
+- **`globals.css`**
+  - Global styles, Tailwind directives and CSS variables
+
+- **`projects/`**
+  - `page.tsx` — Portfolio page with category filter
+  - **`[slug]/`**
+    - `page.tsx` — Dynamic project case study page
+
+- **`blog/`**
+  - `page.tsx` — Journal listing page with category filter
+  - **`[slug]/`**
+    - `page.tsx` — Dynamic blog article detail page
+
+- **`components/`**
+  - `Navbar.tsx` — Responsive sticky header and mobile drawer
+  - `Hero.tsx` — Minimalist editorial hero section
+  - `Services.tsx` — Four core studio services
+  - `Projects.tsx` — Selected work showcase section
+  - `ProjectCard.tsx` — Reusable case study card
+  - `Blog.tsx` — Thought leadership article section
+  - `BlogCard.tsx` — Reusable journal card
+  - `Testimonials.tsx` — Client testimonials
+  - `SectionHeading.tsx` — Reusable section title component
+  - `Footer.tsx` — Contact CTA and location footer
+
+- **`data/`**
+  - `projects.ts` — Local dataset containing four projects
+  - `blog.ts` — Local dataset containing four thought-leadership posts
+
+- **`types/`**
+  - `index.ts` — TypeScript interface definitions
+
+### Root Files
+
+- `next.config.ts` — Next.js configuration and Unsplash remote image settings
+- `package.json` — Project dependencies and scripts
+- `tsconfig.json` — TypeScript configuration
+- `README.md` — Project documentation
 ---
 

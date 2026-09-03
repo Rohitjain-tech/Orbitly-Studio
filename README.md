@@ -34,7 +34,85 @@
 
 ## 📁 Folder Structure
 
-Orbitly Studio/ ├── src/ │ ├── app/ │ │ ├── layout.tsx # Root layout (Metadata, Fonts, Navbar, Footer) │ │ ├── page.tsx # Homepage (Hero, Services, Projects, Blog, Testimonials) │ │ ├── globals.css # Tailwind directives & CSS variable tokens │ │ ├── projects/ │ │ │ ├── page.tsx # Portfolio page with category filter │ │ │ └── [slug]/ │ │ │ └── page.tsx # Dynamic project case study page (SSG) │ │ └── blog/ │ │ ├── page.tsx # Journal listing page with category filter │ │ └── [slug]/ │ │ └── page.tsx # Dynamic blog article detail page (SSG) │ ├── components/ │ │ ├── Navbar.tsx # Responsive sticky header & mobile drawer │ │ ├── Hero.tsx # Minimalist editorial hero section │ │ ├── Services.tsx # 4 core studio services │ │ ├── Projects.tsx # Selected work showcase section │ │ ├── ProjectCard.tsx # Reusable case study card │ │ ├── Blog.tsx # Thought leadership article section │ │ ├── BlogCard.tsx # Reusable journal card │ │ ├── Testimonials.tsx # Client endorsements │ │ ├── SectionHeading.tsx # Reusable section title component │ │ └── Footer.tsx # Contact CTA & location footer │ ├── data/ │ │ ├── projects.ts # Local dataset of 4 projects │ │ └── blog.ts # Local dataset of 4 thought-leadership posts │ └── types/ │ └── index.ts # Strict TypeScript interface definitions ├── next.config.ts # Unsplash remote image pattern configuration ├── package.json └── tsconfig.json
-
+Orbitly Studio/
+│
+├── src/
+│   │
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   │   └── Root layout (Metadata, Fonts, Navbar, Footer)
+│   │   │
+│   │   └── page.tsx
+│   │       └── Homepage (Hero, Services, Projects, Blog, Testimonials)
+│   │
+│   ├── globals.css
+│   │   └── Tailwind directives & CSS variable tokens
+│   │
+│   ├── projects/
+│   │   ├── page.tsx
+│   │   │   └── Portfolio page with category filter
+│   │   │
+│   │   └── [slug]/
+│   │       └── page.tsx
+│   │           └── Dynamic project case study page (SSG)
+│   │
+│   ├── blog/
+│   │   ├── page.tsx
+│   │   │   └── Journal listing page with category filter
+│   │   │
+│   │   └── [slug]/
+│   │       └── page.tsx
+│   │           └── Dynamic blog article detail page (SSG)
+│   │
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   │   └── Responsive sticky header & mobile drawer
+│   │   │
+│   │   ├── Hero.tsx
+│   │   │   └── Minimalist editorial hero section
+│   │   │
+│   │   ├── Services.tsx
+│   │   │   └── 4 core studio services
+│   │   │
+│   │   ├── Projects.tsx
+│   │   │   └── Selected work showcase section
+│   │   │
+│   │   ├── ProjectCard.tsx
+│   │   │   └── Reusable case study card
+│   │   │
+│   │   ├── Blog.tsx
+│   │   │   └── Thought leadership article section
+│   │   │
+│   │   ├── BlogCard.tsx
+│   │   │   └── Reusable journal card
+│   │   │
+│   │   ├── Testimonials.tsx
+│   │   │   └── Client endorsements
+│   │   │
+│   │   ├── SectionHeading.tsx
+│   │   │   └── Reusable section title component
+│   │   │
+│   │   └── Footer.tsx
+│   │       └── Contact CTA & location footer
+│   │
+│   ├── data/
+│   │   ├── projects.ts
+│   │   │   └── Local dataset of 4 projects
+│   │   │
+│   │   └── blog.ts
+│   │       └── Local dataset of 4 thought-leadership posts
+│   │
+│   └── types/
+│       └── index.ts
+│           └── Strict TypeScript interface definitions
+│
+├── next.config.ts
+│   └── Unsplash remote image pattern configuration
+│
+├── package.json
+│
+├── tsconfig.json
+│
+└── README.md
 ---
 
